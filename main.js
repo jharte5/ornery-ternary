@@ -6,16 +6,17 @@ function isHot(todayTemp) {
 }
 
 
-function helloThere(Greeting) {
+function helloThere(name) {
 
-  let shortGreeting = "Hi, ";
-  let longerGreeting = "Hello, ";
-  return 
+  // let shortGreeting = "Hi, ";
+  // let longerGreeting = "Hello, ";
+  return name.length > 5 ? 'Hi, ' + name : 'Hello, ' + name; 
 
 }
 
 
-function goodbyeYou() {
+function goodbyeYou(name) {
+  return name === undefined ? 'Goodbye, stranger' : 'Goodbye, ' + name;
 
 }
 
